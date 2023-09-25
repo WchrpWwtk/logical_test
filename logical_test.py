@@ -26,33 +26,23 @@ def numberToThaiText() -> str:
     list_of_str_num: list = list(str(num))
 
     def digit_str_to_thai_text(digit: str) -> str:
-        match (digit):
-            case "1":
-                return (
-                    "เอ็ด"
-                    if list_of_str_num.__len__() == 1
-                    else ""
-                    if list_of_str_num.__len__() == 2
-                    else "หนึ่ง"
-                )
-            case "2":
-                return "ยี่" if list_of_str_num.__len__() == 2 else "สอง"
-            case "3":
-                return "สาม"
-            case "4":
-                return "สี่"
-            case "5":
-                return "ห้า"
-            case "6":
-                return "หก"
-            case "7":
-                return "เจ็ด"
-            case "8":
-                return "แปด"
-            case "9":
-                return "เก้า"
-            case _:
-                return "Something wrong"
+        dict_of_digit = {
+            "1": "เอ็ด"
+            if list_of_str_num.__len__() == 1
+            else ""
+            if list_of_str_num.__len__() == 2
+            else "หนึ่ง",
+            "2": "ยี่" if list_of_str_num.__len__() == 2 else "สอง",
+            "3": "สาม",
+            "4": "สี่",
+            "5": "ห้า",
+            "6": "หก",
+            "7": "เจ็ด",
+            "8": "แปด",
+            "9": "เก้า",
+        }
+
+        return dict_of_digit[digit]
 
     list_of_digits = ["", "สิบ", "ร้อย", "พัน", "หมื่น", "แสน", "ล้าน"]
 
