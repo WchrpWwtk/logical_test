@@ -9,7 +9,7 @@ Convert Number to Thai Text.
 """
 
 
-def numberToThaiText() -> str:
+def number_to_thai_text() -> str:
     try:
         num: int = int(input("Enter the number between 0 - 9999999: "))
 
@@ -59,4 +59,4 @@ def numberToThaiText() -> str:
 
 
 if __name__ == "__main__":
-    numberToThaiText()
+    number_to_thai_text()
