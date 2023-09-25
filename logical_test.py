@@ -19,6 +19,7 @@ def numberToThaiText() -> str:
             return "Please enter number in range 0 - 9999999"
     except ValueError as error:
         print(error)
+        print("Please enter number in range 0 - 9999999")
 
         return error
 
