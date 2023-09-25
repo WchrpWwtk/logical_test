@@ -50,16 +50,16 @@ def numberToThaiText() -> str:
 
     list_of_digits = ["", "สิบ", "ร้อย", "พัน", "หมื่น", "แสน", "ล้าน"]
 
-    thai_num: str = ""
+    thai_text: str = ""
 
     while list_of_str_num.__len__() > 0:
         if list_of_str_num[0] != "0":
-            thai_num += f"{digit_str_to_thai_text(list_of_str_num[0])}{list_of_digits[list_of_str_num.__len__()-1]}"
+            thai_text += f"{digit_str_to_thai_text(list_of_str_num[0])}{list_of_digits[list_of_str_num.__len__()-1]}"
 
         list_of_str_num.pop(0)
 
-    print(thai_num)
-    return thai_num
+    print(thai_text)
+    return thai_text
 
 
 if __name__ == "__main__":
