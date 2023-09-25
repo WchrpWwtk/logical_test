@@ -61,11 +61,11 @@ def arabic_to_roman() -> str:
                 roman += dict_of_roman["40"] if num > 39 else dict_of_roman["10"]
                 num -= 40 if num > 39 else 10
         if num > 4:
-            roman += dict_of_roman["9"] if num > 8 else dict_of_roman["5"]
+            roman += dict_of_roman["9"] if num == 9 else dict_of_roman["5"]
             num -= 9 if num > 8 else 5
         else:
             while num > 0:
-                roman += dict_of_roman["4"] if num > 3 else dict_of_roman["1"]
+                roman += dict_of_roman["4"] if num == 4 else dict_of_roman["1"]
                 num -= 4 if num > 3 else 1
 
     print(roman)
