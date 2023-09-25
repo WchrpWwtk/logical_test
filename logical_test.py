@@ -26,7 +26,7 @@ def numberToThaiText() -> str:
     list_of_str_num: list = list(str(num))
 
     def digit_str_to_thai_text(digit: str) -> str:
-        dict_of_digit = {
+        dict_of_digit: dict = {
             "1": "เอ็ด"
             if list_of_str_num.__len__() == 1
             else ""
@@ -44,7 +44,7 @@ def numberToThaiText() -> str:
 
         return dict_of_digit[digit]
 
-    list_of_digits = ["", "สิบ", "ร้อย", "พัน", "หมื่น", "แสน", "ล้าน"]
+    list_of_digits: list = ["", "สิบ", "ร้อย", "พัน", "หมื่น", "แสน", "ล้าน"]
 
     thai_text: str = ""
 
