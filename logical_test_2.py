@@ -9,7 +9,7 @@ Convert Arabic Number to Roman Number.
 """
 
 
-def number_to_roman() -> str:
+def arabic_to_roman() -> str:
     try:
         num: int = int(input("Enter number between 1 - 1000: "))
 
@@ -74,4 +74,4 @@ def number_to_roman() -> str:
 
 
 if __name__ == "__main__":
-    number_to_roman()
+    arabic_to_roman()
