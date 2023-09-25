@@ -10,12 +10,17 @@ Convert Number to Thai Text.
 
 
 def numberToThaiText() -> str:
-    num: int = int(input("Enter the number between 0 - 9999999: "))
+    try:
+        num: int = int(input("Enter the number between 0 - 9999999: "))
 
-    if num < 0 or num > 9999999:
-        print("Please enter number in range 0 - 9999999")
+        if num < 0 or num > 9999999:
+            print("Please enter number in range 0 - 9999999")
 
-        return "Please enter number in range 0 - 9999999"
+            return "Please enter number in range 0 - 9999999"
+    except ValueError as error:
+        print(error)
+
+        return error
 
     list_of_str_num: list = list(str(num))
 
