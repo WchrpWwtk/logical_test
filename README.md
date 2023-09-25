@@ -1,1 +1,3 @@
-# logical_test include `logical_test.py` and `logical_test2.py`
+# logical_test 
+- `logical_test.py`
+- `logical_test2.py`
