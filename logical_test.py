@@ -22,7 +22,13 @@ def numberToThaiText() -> str:
     def digit_str_to_thai_text(digit: str) -> str:
         match (digit):
             case "1":
-                return "เอ็ด" if list_of_str_num.__len__() == 1 else "หนึ่ง"
+                return (
+                    "เอ็ด"
+                    if list_of_str_num.__len__() == 1
+                    else ""
+                    if list_of_str_num.__len__() == 2
+                    else "หนึ่ง"
+                )
             case "2":
                 return "ยี่" if list_of_str_num.__len__() == 2 else "สอง"
             case "3":
