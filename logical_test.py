@@ -8,9 +8,6 @@ Convert Number to Thai Text.
 
 """
 
-# input = 1234567
-# output = "หนึ่งล้านสองแสนสามหมื่นสี่พันห้าร้อยหกสิบเจ็ด"
-
 
 def numberToThaiText() -> str:
     num: int = int(input("Enter the number: "))
